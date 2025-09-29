@@ -1,0 +1,250 @@
+Loading all client CSV files...
+
+✅ Loaded 24 clients
+
+🔍 Checking client ID integrity and overlap...
+All clients loaded: ['1', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '2', '20', '21', '22', '23', '24', '3', '4', '5', '6', '7', '8', '9']
+Train clients: ['24', '23', '4', '5', '18', '16', '3', '9', '15', '19', '12', '1', '6', '20', '14', '2', '22', '8', '11']
+Test clients:  ['13', '7', '10', '21', '17']
+✅ Train and test clients are disjoint.
+
+📦 Sequence summary per client:
+Train Client 24: 985 sequences
+Train Client 23: 945 sequences
+Train Client 4: 1022 sequences
+Train Client 5: 969 sequences
+Train Client 18: 1059 sequences
+Train Client 16: 1167 sequences
+Train Client 3: 1197 sequences
+Train Client 9: 1023 sequences
+Train Client 15: 982 sequences
+Train Client 19: 1394 sequences
+Train Client 12: 983 sequences
+Train Client 1: 1099 sequences
+Train Client 6: 965 sequences
+Train Client 20: 1011 sequences
+Train Client 14: 1112 sequences
+Train Client 2: 1049 sequences
+Train Client 22: 951 sequences
+Train Client 8: 1084 sequences
+Train Client 11: 1027 sequences
+Test Client 13: 1007 sequences
+Test Client 7: 1110 sequences
+Test Client 10: 1028 sequences
+Test Client 21: 1240 sequences
+Test Client 17: 1003 sequences
+✅ Sequence generation complete.
+
+📊 Final stats:
+→ Total clients: 24
+→ Train clients: 19
+→ Test clients: 5
+[92mINFO [0m:      Starting Flower ServerApp, config: num_rounds=20, no round_timeout
+[92mINFO [0m:      
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+Starting FL simulation with 19 clients
+[92mINFO [0m:      Received initial parameters from one random client
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[36m(ClientAppActor pid=24060)[0m 🚀 Starting training for Client 11 (Partition ID: 18)
+[92mINFO [0m:      initial parameters (loss, other metrics): 1.8176848844147295, {'test_accuracy': 0.21956198960653303, 'macro_f1': 0.14137283057160474, 'macro_precision': 0.12243838761889843, 'macro_recall': 0.18482382795810226, 'macro_auroc': 0.42100134602984335}
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 0] Global Test | Loss: 1.8177 | Acc: 21.96% | F1(macro): 0.1414 | Prec(macro): 0.1224 | Rec(macro): 0.1848 | AUROC(macro): 0.4210
+[36m(ClientAppActor pid=24060)[0m 🚀 Starting training for Client 24 (Partition ID: 0)
+[36m(ClientAppActor pid=27120)[0m 🚀 Starting training for Client 20 (Partition ID: 13)
+[36m(ClientAppActor pid=9124)[0m 🚀 Starting training for Client 9 (Partition ID: 7)
+[36m(ClientAppActor pid=27612)[0m 🚀 Starting training for Client 2 (Partition ID: 15)[32m [repeated 12x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 6.48s
+[92mINFO [0m:      fit progress: (1, 0.8859419844817832, {'test_accuracy': 0.6878247958426132, 'macro_f1': 0.46377842203366626, 'macro_precision': 0.5859331227230564, 'macro_recall': 0.5093398240598702, 'macro_auroc': 0.9037932022850544}, 21.653412100000423)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 1] Global Test | Loss: 0.8859 | Acc: 68.78% | F1(macro): 0.4638 | Prec(macro): 0.5859 | Rec(macro): 0.5093 | AUROC(macro): 0.9038
+[36m(ClientAppActor pid=25460)[0m 🚀 Starting training for Client 24 (Partition ID: 0)[32m [repeated 5x across cluster][0m
+[36m(ClientAppActor pid=9124)[0m 🚀 Starting training for Client 22 (Partition ID: 16)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.28s
+[92mINFO [0m:      fit progress: (2, 0.8513816497893624, {'test_accuracy': 0.7780252412769116, 'macro_f1': 0.6510727794514493, 'macro_precision': 0.7369053162759619, 'macro_recall': 0.6587763321970936, 'macro_auroc': 0.92208522975332}, 36.35325269999157)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 2] Global Test | Loss: 0.8514 | Acc: 77.80% | F1(macro): 0.6511 | Prec(macro): 0.7369 | Rec(macro): 0.6588 | AUROC(macro): 0.9221
+[36m(ClientAppActor pid=23836)[0m 🚀 Starting training for Client 18 (Partition ID: 4)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=27612)[0m 🚀 Starting training for Client 14 (Partition ID: 14)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.27s
+[92mINFO [0m:      fit progress: (3, 0.7439008492771771, {'test_accuracy': 0.8234966592427617, 'macro_f1': 0.7235194970356768, 'macro_precision': 0.7661434481332706, 'macro_recall': 0.731451386212519, 'macro_auroc': 0.9446404401983394}, 50.554740499996115)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 3] Global Test | Loss: 0.7439 | Acc: 82.35% | F1(macro): 0.7235 | Prec(macro): 0.7661 | Rec(macro): 0.7315 | AUROC(macro): 0.9446
+[36m(ClientAppActor pid=27612)[0m 🚀 Starting training for Client 18 (Partition ID: 4)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=32420)[0m 🚀 Starting training for Client 11 (Partition ID: 18)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.55s
+[92mINFO [0m:      fit progress: (4, 0.7110723677584272, {'test_accuracy': 0.8396436525612472, 'macro_f1': 0.7505766216532618, 'macro_precision': 0.7854674853591163, 'macro_recall': 0.760284876965891, 'macro_auroc': 0.9556540657339125}, 65.59425549999287)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 4] Global Test | Loss: 0.7111 | Acc: 83.96% | F1(macro): 0.7506 | Prec(macro): 0.7855 | Rec(macro): 0.7603 | AUROC(macro): 0.9557
+[36m(ClientAppActor pid=27612)[0m 🚀 Starting training for Client 9 (Partition ID: 7)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=9124)[0m 🚀 Starting training for Client 3 (Partition ID: 6)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.32s
+[92mINFO [0m:      fit progress: (5, 0.7119484750072402, {'test_accuracy': 0.8509651076466221, 'macro_f1': 0.7663113501182016, 'macro_precision': 0.7910694046931489, 'macro_recall': 0.776791970283314, 'macro_auroc': 0.95984796134097}, 80.20076870000048)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 5] Global Test | Loss: 0.7119 | Acc: 85.10% | F1(macro): 0.7663 | Prec(macro): 0.7911 | Rec(macro): 0.7768 | AUROC(macro): 0.9598
+[36m(ClientAppActor pid=9124)[0m 🚀 Starting training for Client 24 (Partition ID: 0)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=21344)[0m 🚀 Starting training for Client 2 (Partition ID: 15)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.52s
+[92mINFO [0m:      fit progress: (6, 0.6040053276164331, {'test_accuracy': 0.871380846325167, 'macro_f1': 0.7959710098116829, 'macro_precision': 0.8124496808910783, 'macro_recall': 0.8071306996507269, 'macro_auroc': 0.968458429339833}, 95.44118729999173)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 6] Global Test | Loss: 0.6040 | Acc: 87.14% | F1(macro): 0.7960 | Prec(macro): 0.8124 | Rec(macro): 0.8071 | AUROC(macro): 0.9685
+[36m(ClientAppActor pid=23836)[0m 🚀 Starting training for Client 15 (Partition ID: 8)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=23836)[0m 🚀 Starting training for Client 22 (Partition ID: 16)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.56s
+[92mINFO [0m:      fit progress: (7, 0.5806376469113177, {'test_accuracy': 0.8808463251670379, 'macro_f1': 0.8109676100499112, 'macro_precision': 0.826811505155946, 'macro_recall': 0.8236816727307841, 'macro_auroc': 0.9717397773672308}, 110.47364269998798)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 7] Global Test | Loss: 0.5806 | Acc: 88.08% | F1(macro): 0.8110 | Prec(macro): 0.8268 | Rec(macro): 0.8237 | AUROC(macro): 0.9717
+[36m(ClientAppActor pid=32420)[0m 🚀 Starting training for Client 4 (Partition ID: 2)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=32420)[0m 🚀 Starting training for Client 14 (Partition ID: 14)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 5.07s
+[92mINFO [0m:      fit progress: (8, 0.5792188180433624, {'test_accuracy': 0.8810319227913883, 'macro_f1': 0.8125875446958672, 'macro_precision': 0.8317306223407064, 'macro_recall': 0.825434431760735, 'macro_auroc': 0.9736862270581391}, 126.54008739998972)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 8] Global Test | Loss: 0.5792 | Acc: 88.10% | F1(macro): 0.8126 | Prec(macro): 0.8317 | Rec(macro): 0.8254 | AUROC(macro): 0.9737
+[36m(ClientAppActor pid=27612)[0m 🚀 Starting training for Client 16 (Partition ID: 5)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=9124)[0m 🚀 Starting training for Client 22 (Partition ID: 16)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.61s
+[92mINFO [0m:      fit progress: (9, 0.5582980816549402, {'test_accuracy': 0.887713437268003, 'macro_f1': 0.8225619283621496, 'macro_precision': 0.8399091951695583, 'macro_recall': 0.833894979798631, 'macro_auroc': 0.9760045740079728}, 141.36838169999828)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 9] Global Test | Loss: 0.5583 | Acc: 88.77% | F1(macro): 0.8226 | Prec(macro): 0.8399 | Rec(macro): 0.8339 | AUROC(macro): 0.9760
+[36m(ClientAppActor pid=25460)[0m 🚀 Starting training for Client 4 (Partition ID: 2)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=23836)[0m 🚀 Starting training for Client 2 (Partition ID: 15)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 5.28s
+[92mINFO [0m:      fit progress: (10, 0.5964854861889959, {'test_accuracy': 0.8856718634001485, 'macro_f1': 0.820473377076766, 'macro_precision': 0.8382456716902965, 'macro_recall': 0.8312677433759457, 'macro_auroc': 0.975531232001296}, 157.49154639999324)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 11]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 10] Global Test | Loss: 0.5965 | Acc: 88.57% | F1(macro): 0.8205 | Prec(macro): 0.8382 | Rec(macro): 0.8313 | AUROC(macro): 0.9755
+[36m(ClientAppActor pid=21344)[0m 🚀 Starting training for Client 18 (Partition ID: 4)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=20996)[0m 🚀 Starting training for Client 2 (Partition ID: 15)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.58s
+[92mINFO [0m:      fit progress: (11, 0.533531944311572, {'test_accuracy': 0.8964365256124721, 'macro_f1': 0.834915145992674, 'macro_precision': 0.8441557432815907, 'macro_recall': 0.8437475206578554, 'macro_auroc': 0.978177229278978}, 172.98994679999305)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 12]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 11] Global Test | Loss: 0.5335 | Acc: 89.64% | F1(macro): 0.8349 | Prec(macro): 0.8442 | Rec(macro): 0.8437 | AUROC(macro): 0.9782
+[36m(ClientAppActor pid=32420)[0m 🚀 Starting training for Client 12 (Partition ID: 10)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=32420)[0m 🚀 Starting training for Client 11 (Partition ID: 18)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.88s
+[92mINFO [0m:      fit progress: (12, 0.5030404457061313, {'test_accuracy': 0.9103563474387528, 'macro_f1': 0.8559147309342174, 'macro_precision': 0.866506708798514, 'macro_recall': 0.8615662216768011, 'macro_auroc': 0.9796450875529853}, 189.16523609998694)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 13]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 12] Global Test | Loss: 0.5030 | Acc: 91.04% | F1(macro): 0.8559 | Prec(macro): 0.8665 | Rec(macro): 0.8616 | AUROC(macro): 0.9796
+[36m(ClientAppActor pid=27612)[0m 🚀 Starting training for Client 1 (Partition ID: 11)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=25460)[0m 🚀 Starting training for Client 2 (Partition ID: 15)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.76s
+[92mINFO [0m:      fit progress: (13, 0.5213206869884257, {'test_accuracy': 0.9066443949517446, 'macro_f1': 0.8505283557821891, 'macro_precision': 0.8628468916448578, 'macro_recall': 0.8553600206953934, 'macro_auroc': 0.9794563443185614}, 204.71095529999002)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 14]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 13] Global Test | Loss: 0.5213 | Acc: 90.66% | F1(macro): 0.8505 | Prec(macro): 0.8628 | Rec(macro): 0.8554 | AUROC(macro): 0.9795
+[36m(ClientAppActor pid=24552)[0m 🚀 Starting training for Client 3 (Partition ID: 6)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=32420)[0m 🚀 Starting training for Client 1 (Partition ID: 11)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.85s
+[92mINFO [0m:      fit progress: (14, 0.5653558011710174, {'test_accuracy': 0.9042316258351893, 'macro_f1': 0.8459573656439298, 'macro_precision': 0.8547412189457114, 'macro_recall': 0.8560173914543788, 'macro_auroc': 0.9773831236477907}, 220.91503099999682)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 15]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 14] Global Test | Loss: 0.5654 | Acc: 90.42% | F1(macro): 0.8460 | Prec(macro): 0.8547 | Rec(macro): 0.8560 | AUROC(macro): 0.9774
+[36m(ClientAppActor pid=24552)[0m 🚀 Starting training for Client 5 (Partition ID: 3)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=32420)[0m 🚀 Starting training for Client 2 (Partition ID: 15)[32m [repeated 13x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.60s
+[92mINFO [0m:      fit progress: (15, 0.545609074743059, {'test_accuracy': 0.9096139569413512, 'macro_f1': 0.8539238467905378, 'macro_precision': 0.8619029480928032, 'macro_recall': 0.8626577806118023, 'macro_auroc': 0.9792363575858308}, 235.97022839999408)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 16]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 15] Global Test | Loss: 0.5456 | Acc: 90.96% | F1(macro): 0.8539 | Prec(macro): 0.8619 | Rec(macro): 0.8627 | AUROC(macro): 0.9792
+[36m(ClientAppActor pid=9124)[0m 🚀 Starting training for Client 23 (Partition ID: 1)[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=25460)[0m 🚀 Starting training for Client 20 (Partition ID: 13)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.70s
+[92mINFO [0m:      fit progress: (16, 0.5591846688937601, {'test_accuracy': 0.9053452115812918, 'macro_f1': 0.8474866955314608, 'macro_precision': 0.8545070297232886, 'macro_recall': 0.8583886322830585, 'macro_auroc': 0.9796844010507502}, 251.86297209998884)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 17]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 16] Global Test | Loss: 0.5592 | Acc: 90.53% | F1(macro): 0.8475 | Prec(macro): 0.8545 | Rec(macro): 0.8584 | AUROC(macro): 0.9797
+[36m(ClientAppActor pid=32420)[0m 🚀 Starting training for Client 12 (Partition ID: 10)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=24060)[0m 🚀 Starting training for Client 15 (Partition ID: 8)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.76s
+[92mINFO [0m:      fit progress: (17, 0.5313163197170826, {'test_accuracy': 0.9133259094283593, 'macro_f1': 0.8605008764151493, 'macro_precision': 0.866996593468798, 'macro_recall': 0.8680449064914028, 'macro_auroc': 0.9806848392439008}, 267.21925999999803)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 18]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 17] Global Test | Loss: 0.5313 | Acc: 91.33% | F1(macro): 0.8605 | Prec(macro): 0.8670 | Rec(macro): 0.8680 | AUROC(macro): 0.9807
+[36m(ClientAppActor pid=25460)[0m 🚀 Starting training for Client 23 (Partition ID: 1)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=22364)[0m 🚀 Starting training for Client 22 (Partition ID: 16)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.87s
+[92mINFO [0m:      fit progress: (18, 0.5291611219470437, {'test_accuracy': 0.9151818856718634, 'macro_f1': 0.861718872519419, 'macro_precision': 0.8693637741910742, 'macro_recall': 0.8683084076157702, 'macro_auroc': 0.9804683570667821}, 283.72488599999633)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 19]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 18] Global Test | Loss: 0.5292 | Acc: 91.52% | F1(macro): 0.8617 | Prec(macro): 0.8694 | Rec(macro): 0.8683 | AUROC(macro): 0.9805
+[36m(ClientAppActor pid=23836)[0m 🚀 Starting training for Client 5 (Partition ID: 3)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=27612)[0m 🚀 Starting training for Client 22 (Partition ID: 16)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.78s
+[92mINFO [0m:      fit progress: (19, 0.5169669375140542, {'test_accuracy': 0.914068299925761, 'macro_f1': 0.8598164660709825, 'macro_precision': 0.8650179061822963, 'macro_recall': 0.8675334344234519, 'macro_auroc': 0.9819717810545082}, 299.397825299995)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 20]
+[92mINFO [0m:      configure_fit: strategy sampled 19 clients (out of 19)
+[Round 19] Global Test | Loss: 0.5170 | Acc: 91.41% | F1(macro): 0.8598 | Prec(macro): 0.8650 | Rec(macro): 0.8675 | AUROC(macro): 0.9820
+[36m(ClientAppActor pid=24552)[0m 🚀 Starting training for Client 24 (Partition ID: 0)[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=9124)[0m 🚀 Starting training for Client 20 (Partition ID: 13)[32m [repeated 12x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 19 results and 0 failures
+[Server] Aggregated avg client train time: 4.76s
